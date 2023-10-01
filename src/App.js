@@ -11,15 +11,23 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/nitai2023"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          我的github
         </a>
       </header>
     </div>
   );
 }
+function Example(){
+  return (
+    <div>
+      <h1>我的第一个react组件</h1>
+    </div>
 
+  )
+}
 export default App;
+export {Example};
