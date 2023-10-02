@@ -1,0 +1,9 @@
+#first_example{
+    background-color: rgb(214, 78, 100);
+    margin: 0;
+}
+#first_h1{
+    display: inline-block;
+    width: 100vw;
+    text-align: center;
+}

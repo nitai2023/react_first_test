@@ -21,13 +21,5 @@ function App() {
     </div>
   );
 }
-function Example(){
-  return (
-    <div>
-      <h1>我的第一个react组件</h1>
-    </div>
 
-  )
-}
 export default App;
-export {Example};
