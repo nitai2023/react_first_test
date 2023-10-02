@@ -1,9 +1,10 @@
 #first_example{
-    background-color: rgb(214, 78, 100);
+    background-color: rgb(94, 243, 119);
     margin: 0;
 }
 #first_h1{
     display: inline-block;
     width: 100vw;
     text-align: center;
+    color: rgb(166, 73, 241);
 }
