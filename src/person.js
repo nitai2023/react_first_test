@@ -1,7 +1,7 @@
 function Person(){
     return (
         <div>
-            <Student name="bob"></Student>
+            <Student name="bob" changes={()=>alert("change")}></Student>
         </div>
     )
 }
@@ -12,9 +12,9 @@ const people = [
     '珀西·莱温·朱利亚: 化学家',
     '苏布拉马尼扬·钱德拉塞卡: 天体物理学家',
   ];
-function Student({name}){
+function Student({name,changes}){
     return(
-    <h1>
+    <h1 onClick={changes}>
         {name}
     </h1>
     )
