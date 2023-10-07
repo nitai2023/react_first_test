@@ -21,14 +21,18 @@ function Student({name,changes}){
     )
 }
 function List() {
+  let [index, setIndex] = useState(0);
     const listItems = people.map(person =>
+      <div>
       <li>{person}</li>
+      <button onClick={()=>{setIndex(index+1)}}>{index}</button>
+      </div>
     );
-    let [index, setIndex] = useState(0);
+
     return (
     <ul>
       {listItems}
-      <button onClick={()=>{setIndex(index+1)}}>{index}</button>
+
       </ul>
 
     );
