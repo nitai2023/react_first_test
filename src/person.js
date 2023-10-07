@@ -1,7 +1,8 @@
+import { useState } from "react";
 function Person(){
     return (
         <div>
-            <Student name="bob" changes={()=>alert("change")}></Student>
+            <Student name="bob" changes={()=>{console.log(1)}}></Student>
         </div>
     )
 }
@@ -23,7 +24,14 @@ function List() {
     const listItems = people.map(person =>
       <li>{person}</li>
     );
-    return <ul>{listItems}</ul>;
+    let [index, setIndex] = useState(0);
+    return (
+    <ul>
+      {listItems}
+      <button onClick={()=>{setIndex(index+1)}}>{index}</button>
+      </ul>
+
+    );
   }
   
 export {Student,Person,List}
