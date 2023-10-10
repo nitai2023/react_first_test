@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {useRef} from 'react';
 function Person(){
     return (
         <div>
@@ -15,6 +16,11 @@ function Student({name,changes}){
     )
 }
 function List() {
+  const ref=useRef()
+  const change_color=()=>{
+  ref.current.style.color ="#" +  Math.floor(Math.random() * 16777215).toString(16);
+  ref.current.style.backgroundColor ="#" +  Math.floor(Math.random() * 16777215).toString(16);
+  }
   let [index, setIndex] = useState(0);
   const [mqy, setmqy] = useState({
     name:"mqy",
@@ -36,7 +42,7 @@ function List() {
     );
 
     return (
-    <ul>
+    <ul onClick={change_color} ref={ref}>
       {listItems}
 
       </ul>
