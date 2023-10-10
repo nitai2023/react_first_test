@@ -6,13 +6,7 @@ function Person(){
         </div>
     )
 }
-const people = [
-    '凯瑟琳·约翰逊: 数学家',
-    '马里奥·莫利纳: 化学家',
-    '穆罕默德·阿卜杜勒·萨拉姆: 物理学家',
-    '珀西·莱温·朱利亚: 化学家',
-    '苏布拉马尼扬·钱德拉塞卡: 天体物理学家',
-  ];
+
 function Student({name,changes}){
     return(
     <h1 onClick={changes}>
@@ -22,9 +16,21 @@ function Student({name,changes}){
 }
 function List() {
   let [index, setIndex] = useState(0);
-    const listItems = people.map(person =>
+  const [mqy, setmqy] = useState({
+    name:"mqy",
+    age:20,
+    sex:"男",
+    school:"电子科技大学大学",
+    sub_major:"计算机",
+  
+  })
+    const listItems = (
       <div>
-      <li>{person}</li>
+      <li>{mqy.name}</li>
+      <li onClick={()=>{setmqy({...mqy,age:mqy.age+1})}}>{mqy.age}</li>
+      <li>{mqy.sex}</li>
+      <li>{mqy.school}</li>
+      <li>{mqy.sub_major}</li>
       <button onClick={()=>{setIndex(index+1)}}>{index}</button>
       </div>
     );
