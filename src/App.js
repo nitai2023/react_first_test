@@ -1,9 +1,10 @@
-
+import sun from "./echo.png"
 import './App.css';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src={sun} alt="sun" id="sun"></img>
         <p>
           大喷菇的blog
         </p>
@@ -16,9 +17,9 @@ function App() {
           github
         </a>
         <div id="routes">
-          <div class="route">一号</div>
-          <div class="route">二号</div>
-          <div class="route">三号</div>
+          <div class="route">文章</div>
+          <div class="route">组件</div>
+          <div class="route">活动</div>
         </div>
 
         {/* <Link></Link> */}

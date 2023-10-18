@@ -8,7 +8,7 @@ function Example(){
   }
     return (
       <div id="first_example">
-        <img src={logo} alt="图标"/>
+        <img src={logo} alt="图标" className=""/>
 
         <h1 id="first_h1" onClick={change_color} ref={ref}>我的第一个react组件</h1>
       </div>

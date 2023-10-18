@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Example } from './Example';
-import { Person,List} from './person';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,11 +15,6 @@ root.render(
     <List></List> */}
   </React.StrictMode>
 );
-// React.render((
-//   <Routes>
-//     <Route path='./app' Component={App}></Route>
-//   </Routes>
-// ))
 
 
 reportWebVitals();

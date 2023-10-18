@@ -62,4 +62,10 @@ p{
 .route:hover{
   width: 13vw;
   height: 13vw;
+  background-color: rgb(238, 113, 75);
+}
+#sun{
+  position: absolute;
+  left: 0;
+  top: 0;
 }
