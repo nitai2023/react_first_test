@@ -6,15 +6,21 @@ import reportWebVitals from './reportWebVitals';
 import { Example } from './Example';
 import { Person,List} from './person';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Example />
+    {/* <Example />
     <Person></Person>
-    <List></List>
+    <List></List> */}
   </React.StrictMode>
 );
+// React.render((
+//   <Routes>
+//     <Route path='./app' Component={App}></Route>
+//   </Routes>
+// ))
 
 
 reportWebVitals();

@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          我的第一个react应用
+          大喷菇的blog
         </p>
         <a
           className="App-link"
@@ -15,8 +13,15 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          我的github
+          github
         </a>
+        <div id="routes">
+          <div class="route">一号</div>
+          <div class="route">二号</div>
+          <div class="route">三号</div>
+        </div>
+
+        {/* <Link></Link> */}
       </header>
     </div>
   );
