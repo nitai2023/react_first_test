@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: aqua;
+
   min-height: auto;
   display: flex;
   flex-direction: column;
@@ -35,37 +35,74 @@ body{
 }
 p{
   color: rgb(162, 66, 207);
+  width: 25vw;
+  background-color:rgb(221, 173, 83);
+  border-radius: 10px;
+  transition: 1s;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p:hover{
+  background-color: rgb(55, 245, 48);
+  width: 30vw;
+  height: 4vw;
 }
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  0% {
+    width: 20vw;
+    height: 20vw;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    width: 25vw;
+    height: 25vw;
   }
+}
+#root{
+  background-color: white;
+  border-radius: 10%;
+  padding: 5vw;
 }
 #routes{
   display: flex;
-  
+  margin-top: 50px;
 }
 .route{
   width: 10vw;
   height: 10vw;
   display: flex;
-  background-color: rgb(139, 238, 58);
+  background-color: rgb(99, 250, 250);
   margin: 10px;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  transition: 2s;
+  transition: 1s;
 }
 .route:hover{
   width: 13vw;
   height: 13vw;
-  background-color: rgb(238, 113, 75);
+  background-color: rgb(156, 245, 138);
 }
 #sun{
   position: absolute;
   left: 0;
   top: 0;
+  animation: App-logo-spin infinite 10s linear;
 }
+ img{
+  width: 10vw;
+  
+} 
+#BigMushroom{
+  border-radius: 50%;
+  overflow: hidden;
+  width: 10vw;
+  height: 10vw;
+  border: yellow 2px solid;
+}
+a{
+  text-decoration: none;
+}
+
+

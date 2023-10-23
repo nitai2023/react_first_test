@@ -1,20 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import "./index.css";
+import { App } from "./App";
+import Contact from "./routes/contact";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:<App></App>,
+  },
+  {
+    path: "contacts/:contactId",
+    element: <Contact />
+  }
+]);
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-    {/* <Example />
-    <Person></Person>
-    <List></List> */}
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-
-reportWebVitals();
