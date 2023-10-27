@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={sun} alt="sun" id="sun"></img>
         <div id="BigMushroom"><img src={BigMushroom} alt="BigMushroom" id="BigMushroom_img"></img> </div>
-        <p>
+        <p id="App_p">
           大喷菇的blog
         </p>
         <a
@@ -19,16 +19,10 @@ function App() {
           github
         </a>
         <div id="routes">
-          <a href={`/contacts/1`}><div className="route">文章</div></a>
+          <a href={`/message`}><div className="route">文章</div></a>
           <a href={`/contacts/2`}><div className="route">组件</div></a>
           <a href={`/contacts/3`}><div className="route">活动</div></a>
         </div>
-  
-        {/* <Link to="/Example">example组件</Link>
-        <Routes>
-          <Route to="/Example" component={Example}></Route>
-        </Routes> */}
-
       </header>
     </div>
   );

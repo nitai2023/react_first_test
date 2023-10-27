@@ -25,7 +25,8 @@
   color: white;
 }
 body{
-  height: 100vh;
+  height: auto;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +34,7 @@ body{
 .App-link {
   color: #b95eee;
 }
-p{
+#App_p{
   color: rgb(162, 66, 207);
   width: 25vw;
   background-color:rgb(221, 173, 83);
@@ -44,12 +45,12 @@ p{
   justify-content: center;
   align-items: center;
 }
-p:hover{
+#App_p:hover{
   background-color: rgb(55, 245, 48);
   width: 30vw;
   height: 4vw;
 }
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   0% {
     width: 20vw;
     height: 20vw;
@@ -58,8 +59,13 @@ p:hover{
     width: 25vw;
     height: 25vw;
   }
-}
-#root{
+} */
+/* #root{
+  background-color: white;
+  border-radius: 10%;
+  padding: 5vw;
+} */
+.App{
   background-color: white;
   border-radius: 10%;
   padding: 5vw;
@@ -88,7 +94,7 @@ p:hover{
   position: absolute;
   left: 0;
   top: 0;
-  animation: App-logo-spin infinite 10s linear;
+  /* animation: App-logo-spin infinite 10s linear; */
 }
  img{
   width: 10vw;

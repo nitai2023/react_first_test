@@ -7,15 +7,15 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import { App } from "./App";
-import Contact from "./routes/contact";
+import Message from "./routes/message";
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App></App>,
   },
   {
-    path: "contacts/:contactId",
-    element: <Contact />
+    path:"message",
+    element:<Message />
   }
 ]);
 
