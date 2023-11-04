@@ -9,11 +9,11 @@ export default function Message(){
         <article>
         <Passage1></Passage1>
         <Passage1></Passage1>
+        <Passage1></Passage1>
         </article>
         <aside>
           导航
         </aside>
-        
         <footer>
           页脚
         </footer>

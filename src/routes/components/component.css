@@ -1,0 +1,11 @@
+.component{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: aliceblue;
+    min-width: 20vw;
+    width: 30%;
+    margin: 20px;
+    flex: 1;
+    border-radius: 10px;
+}

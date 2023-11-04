@@ -8,6 +8,8 @@ import {
 import "./index.css";
 import { App } from "./App";
 import Message from "./routes/message";
+import {Components} from "./routes/components";
+import {Activity} from "./routes/activity";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,7 +17,15 @@ const router = createBrowserRouter([
   },
   {
     path:"message",
-    element:<Message />
+    element:<Message />,
+  },
+  {
+    path:"components",
+    element:<Components />
+  },
+  {
+    path:"activity",
+    element:<Activity />
   }
 ]);
 

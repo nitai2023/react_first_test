@@ -20,8 +20,8 @@ function App() {
         </a>
         <div id="routes">
           <a href={`/message`}><div className="route">文章</div></a>
-          <a href={`/contacts/2`}><div className="route">组件</div></a>
-          <a href={`/contacts/3`}><div className="route">活动</div></a>
+          <a href={`/components`}><div className="route">组件</div></a>
+          <a href={`/activity`}><div className="route">活动</div></a>
         </div>
       </header>
     </div>

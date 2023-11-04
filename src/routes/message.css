@@ -1,13 +1,19 @@
 .container {
     display: grid;
     width: 80vw;
-    grid-template-columns:   75% 20%;
+    grid-template-columns:   75% 25%;
     grid-gap: 1em;
     justify-content: center; 
     align-items: center; 
+    min-height: 100vh;
   }
   header, footer {
     grid-column: 1 / 4;
+  }
+  footer{
+    position:fixed;
+    bottom: 0px;
+    grid-row: 3;
   }
   /* header,
   aside,
@@ -22,7 +28,7 @@
     position: relative;
     top: 5px;
     width: auto;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,17 +39,17 @@
   }
   header{
     font-size: 5vw;
-    
+    grid-row: 1;
   }
   article{
-    padding: 5vw;
     flex-direction: column;
-  }
-  article>*{
-    margin: 20px;
+    margin: 0;
+    grid-row: 2;
+    padding: 0px;
   }
   aside{
-    height: 100%;
+
+    grid-row: 2;
   }
   @media all and (max-width: 700px) {
     aside,
