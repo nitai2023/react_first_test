@@ -1,14 +1,14 @@
-#component_body{
+#activity_body{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
-#component_article{
+#activity_article{
     flex: 3;
     background-color: aliceblue;
 }
-#component_aside{
+#activity_aside{
 flex: 1;
 width: 30vw;
 margin-right: 5vh;
@@ -17,7 +17,7 @@ flex-direction: column;
 justify-content: space-between;
 
 }
-.components_nav{
+#activity_aside li{
     height: 14vh;
     width: 100%;
     border-radius: 10px;
@@ -25,15 +25,15 @@ justify-content: space-between;
     justify-content: center;
     align-items: center;
 }
-.components_nav:hover{
+#activity_aside li:hover{
     background-color: aqua;
 }
-#component_header{
+#activity_header{
     height: 20vh;
     width: auto;
     margin: 5vh;
 }
-#component_main{
+#activity_main{
     width: auto;
     height: 80vh;
     margin: 5vh;

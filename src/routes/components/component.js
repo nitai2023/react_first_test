@@ -1,8 +1,8 @@
 import "./component.css"
-function Component({id}){
+function Component(){
     return (
     <div class="component">
-            <div className="component_specific">组件{id}</div>
+            <div className="component_specific">组件一号</div>
     </div>
     )
 }
