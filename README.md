@@ -1,5 +1,8 @@
 # 第一个react应用
     react,启动
+# 项目启动
+    npm i
+    npm start
 ## 项目的目的
     学习react，练习css
 ## 遇到的问题

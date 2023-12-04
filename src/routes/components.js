@@ -25,7 +25,7 @@ function Components(){
     }
   ];
 const listItems = people.map(person =>
-    <li className="components_nav"><Link to={`components/${person.path}`}>第{person.id}个组件</Link></li>
+    <Link to={`components/${person.path}`} key={person.id } className="components_nav"><li >第{person.id}个组件</li></Link>
   );
 return <div id="component_body">
     <header id="component_header">组件</header>

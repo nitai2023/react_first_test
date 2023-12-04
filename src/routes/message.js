@@ -2,7 +2,7 @@ import "./message.css"
 import { Passage1 } from "./passages/passage1"
 export default function Message(){
     return (
-        <div class="container">
+        <div className="container">
         <header>
           大喷菇的文章
         </header>
